@@ -1,0 +1,74 @@
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  margin-bottom: 100px;
+  /* выше установили ограничения для секции */
+}
+
+/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__square-pic {
+  height: 568px;
+  width: 568px;
+  background-color: 2f80ed;
+}
+
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+}
+
+/*outline*/
+.header,
+.content,
+.digits,
+.description,
+.feynman,
+.kaufman,
+.footers {
+  outline: 5px solid green;
+}
+
+/*header*/
+
+.header {
+  
+}
+
+.logo__place--header{
+  height: 32px;
+  width: 228px;
+  margin-top: 30px;
+  margin-left: 64px;
+}
+
+.header__title {
+  margin-left: 64px;
+  width: 730px;
+}
+
+.header__main-illustration{
+  width:765px;
+  height: 608px;
+  box-sizing: border-box;
+}
+
+.square-pic{
+  width: 568px;
+  height: 568px;
+  background-color: #2f80ed;
+}
