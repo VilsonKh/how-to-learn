@@ -32,6 +32,12 @@
   margin-top: 80px;
 }
 
+:root {
+  --color-blue: #2f80ed;
+  --color-dark-gray: #1f1f1f;
+  --color-light-gray: #f2f2f2;
+}
+
 /*outline*/
 .header,
 .content,
@@ -45,9 +51,7 @@
 
 /*header*/
 
-.header {
-  
-}
+
 
 .logo__place--header{
   height: 32px;
@@ -61,14 +65,25 @@
   width: 730px;
 }
 
-.header__main-illustration{
-  width:765px;
-  height: 608px;
-  box-sizing: border-box;
-}
-
 .square-pic{
   width: 568px;
   height: 568px;
   background-color: #2f80ed;
+  position: absolute;
+  left: 1226px;
+  bottom: 700px;
+}
+
+.header {
+  background-image: url(/how-to-learn/images/header-image.png);
+  background-size: 765px 608px ;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  max-height: 756px;
+ }
+
+.header__subtitle {
+  width: 388px;
+
 }
