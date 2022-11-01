@@ -167,7 +167,8 @@
   right: 500px;
 }
 
-.feynman__background{
+.feynman{
+  display: block;
   background-image: url(/how-to-learn/images/feynman.png);
   background-size: 867px 637px;
   background-repeat: no-repeat;
