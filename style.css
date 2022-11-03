@@ -14,6 +14,13 @@
   min-height: 600px;
   max-height: 756px;
   margin-bottom: 100px;
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  overflow: hidden; 
+  background-color: #f2f2f2;
+  padding-left: 64px;
+  align-items: center;
   /* выше установили ограничения для секции */
 }
 
@@ -21,7 +28,10 @@
 .header__square-pic {
   height: 568px;
   width: 568px;
-  background-color: 2f80ed;
+  background-color: var(--color-blue);
+  top: 64px;
+  right: 0;
+  position: absolute;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -50,64 +60,72 @@
 }
 
 /*header*/
-.header {
-  display: inline;
-  min-height: 600px;
-  max-height: 756px;
 
-}
-.header__main-illustration{
-  
-  background-image: url(images/header-image.png);
-  background-position: center center;
-  background-size: 765px 608px;
+.header__main-illustration {
   width: 765px;
   height: 608px;
-
-
-}
-
-.square-pic{
-  background-color: var(--color-blue);
-  width: 568px;
-  height: 568px;
   position: absolute;
-  bottom: 100px;
-  right: 500px;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+
 }
 
-.header__title{
-
-  width: 730px;
+.header__title {
+  margin: 0;
+  max-width: 730px;
   line-height: 96px;
   font-size: 102px;
-  font-weight: 600;
+  font-weight: 700;
+  z-index: 2;
 }
 
 .header__subtitle {
-  
   line-height: 25px;
   font-size: 18px;
-  font-weight: normal;
   width: 388px;
 }
 
-.two-columns{
+.logo__place-header {
+  width: 228px;
+  height: 32px;
+  position: absolute;
+  top: 30px;
+  left: 64px;
+
+
+
+}
+/* TWO-COLUMNS */
+.description {
+  display: flex;  
+  margin-bottom: 100px;
+}
+.two-columns {
   display: grid;
   grid-template-columns: 175px 80%;
   width: 80%;
-  margin-bottom: 100px;
+  margin: 0 auto;
 }
 
-.two-columns__main-tex{
+.two-columns__main-tex {
   min-width: 784px;
 }
 
-.two-columns__span-accent{
+.two-columns__span-accent {
   font-weight: bold;
 }
 
-.digits__section-title{
+.two-columns__paragraph {
+  margin-bottom: 20px;
+}
+
+
+/* DIGITS */
+.digits__section-title {
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
@@ -119,7 +137,7 @@
 
 }
 
-.digits__section-subtitle{
+.digits__section-subtitle {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -130,7 +148,7 @@
   margin-bottom: 60px;
 }
 
-.digits__table{
+.digits__table {
   display: grid;
   grid-template-columns:  250px 250px 250px 250px;
   gap: 60px;
@@ -148,15 +166,13 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 70px;
-
 }
 
-.feyman__subtitle{
+.feyman__subtitle {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
   text-align: center;
-  
 }
 
 .feyman__link {
@@ -167,18 +183,19 @@
   right: 500px;
 }
 
-.feynman{
+.feynman {
   display: block;
-  background-image: url(/how-to-learn/images/feynman.png);
+  background-image: url(images/feynman.png);
   background-size: 867px 637px;
   background-repeat: no-repeat;
+  min-height: 890px;
 }
 
-/* Kayfman*/
+/* Kaufman*/
 
-.kaufman{
+.kaufman {
   background-color: var(--color-dark-gray);
-  background-image: url(/how-to-learn/images/kaufman-triangle.svg);
+  background-image: url(images/kaufman-triangle.svg);
   background-repeat: no-repeat;
   background-size: 877px 877px;
 }
@@ -188,29 +205,30 @@
   color: white;
 }
 
-.kaufman-title--theme-dark{
+.kaufman-title--theme-dark {
   width: 60%;
   line-height: 1.15;
   font-size: 60;
   font-weight: 600;
 }
-.kaufmann-subtitle--theme-dark{
+
+.kaufmann-subtitle--theme-dark {
   line-height: 34px;
   font-size: 24px;
 }
 
-.cell__heading--theme-dark{
+.cell__heading--theme-dark {
   line-height: 1.2;
   font-size: 18px;
 
 }
 
-.cell__text--theme-dark{
+.cell__text--theme-dark {
   line-height: 1.15;
 
 }
 
-.kaufman__table--theme-dark{
+.kaufman__table--theme-dark {
   display: grid;
   grid-template-columns: 200px 200px 200px 200px 200px;
 }
@@ -221,22 +239,22 @@
   display: flex;
 }
 
-.footer__columns--copyright{
+.footer__columns--copyright { 
   width: 50%;
 }
 
-.footer__columns--info{
+.footer__columns--info {
   width: 25%;
 }
 
-.footer__column-links{
+.footer__column-links {
   list-style: none;
 }
 
-.footer__column-link{
+.footer__column-link {
   list-style: none;
 }
 
-.footer__columns--social{
+.footer__columns--social {
   width: 25%;
 }
