@@ -1,14 +1,17 @@
+:root {
+  --color-blue: #2f80ed;
+  --color-dark-gray: #1f1f1f;
+  --color-light-gray: #f2f2f2;
+}
+
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  border: 3px solid var(--color-light-gray);
 }
+
+/*header*/
 
 .header {
   height: 100vh;
@@ -22,11 +25,8 @@
   background-color: #f2f2f2;
   padding-left: 64px;
   align-items: center;
-  border-bottom: 3px solid var(--color-light-gray);
-  border-top: 3px solid var(--color-light-gray);
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
@@ -35,14 +35,6 @@
   right: 0;
   position: absolute;
 }
-
-:root {
-  --color-blue: #2f80ed;
-  --color-dark-gray: #1f1f1f;
-  --color-light-gray: #f2f2f2;
-}
-
-/*header*/
 
 .header__main-illustration {
   width: 765px;
@@ -76,7 +68,7 @@
 }
 
 .logo {
-  /* width: 228px; */
+  width: 228px;
   height: 32px;
 }
 
@@ -90,12 +82,11 @@
   color: var(--color-blue);
 }
 
-/* TWO-COLUMNS */
+/* DESCRIPTION */
+
 .description {
   display: flex;  
   margin-bottom: 100px;
-  border-bottom: 3px solid var(--color-light-gray);
-  border-top: 3px solid var(--color-light-gray);
 }
 .two-columns {
   display: flex;
@@ -133,7 +124,6 @@
   margin-bottom: 0;
 }
 
-
 /* DIGITS */
 
 .digits {
@@ -141,8 +131,6 @@
   flex-direction: column;
   margin-bottom: 100px;
   align-items: center;
-  border-bottom: 3px solid var(--color-light-gray);
-  border-top: 3px solid var(--color-light-gray);
 }
 
 .section-title {
@@ -169,17 +157,13 @@
   width: 1100px;
   align-self: center;
   justify-content: space-between;
-  padding-top: 60px;
   margin: 0 auto;
-  gap: 60px;
 }
 
 .table__cell {
-  width: 230px;
+  width: 250px;
+  margin: 60px 0 0 0;
 }
-
-/* .table__cell:nth-last-child(-n+4) {
-  margin-bottom: 100px; } */
 
 .table__heading {
   margin: 0;
@@ -213,8 +197,6 @@
   flex-direction: column;
   position: relative;
   align-items: center;
-  border-bottom: 3px solid var(--color-light-gray);
-  border-top: 3px solid var(--color-light-gray);
 }
 
 .feynman__title {
@@ -248,15 +230,19 @@
 /* Kaufman*/
 
 .kaufman {
-  background-image: url(images/kaufman-triangle.svg);
-  background-repeat: no-repeat;
-  background-size: 877px 877px;
   position: relative;
   overflow: hidden;
   background-position: top 0 right -210px;
   background-color: var(--color-dark-gray);
-  border-bottom: 3px solid var(--color-light-gray);
-  border-top: 3px solid var(--color-light-gray);
+  padding-bottom: 90px;
+}
+
+.kaufman_triangle {
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  top: 0;
+  right: -210px;
 }
 
 .section-title_theme_dark{
@@ -274,10 +260,6 @@
 }
 
 .table_theme_dark {
-  padding-top: 80px;
-  padding-bottom: 90px;
-  gap: 0;
-  row-gap: 80px;
   color: var(--color-light-gray);
 }
 
@@ -288,10 +270,13 @@
 
 .table__text_theme_dark {
   line-height: 1.15;
+  z-index: 10;
 }
 
 .table__cell_theme_dark {
   width: 200px;
+  margin: 80px 0 0 0;
+  z-index: 1;
 }
 
 /*Footer*/
@@ -303,6 +288,7 @@
   padding-bottom: 40px;
   background-color: var(--color-dark-gray);
   color: var(--color-light-gray);
+  display: flex;
 }
 
 .footer__columns {
@@ -311,8 +297,6 @@
   width: 90%;
   justify-content: space-between;
   margin: 0 auto; 
-  border-bottom: 3px solid var(--color-light-gray);
-  border-top: 3px solid var(--color-light-gray);
 }
 
 .footer__column_content_copyright {
@@ -328,9 +312,11 @@
   font-size: 18px;
 }
 
-.logo__place-footer {
+.logo__place_footer {
   margin-top: 18px;
   margin-bottom: 18px;
+  height: 35px;
+  width: 183px;
 }
 
 .footer__column-heading {
@@ -367,4 +353,19 @@
 
 .footer__list-item {
   margin-bottom: 5px;
+}
+
+/* ANIMATION */
+
+.rotation {
+  animation: rotation 20s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
