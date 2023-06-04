@@ -1,21 +1,21 @@
 # 📚 How to learn
-Проект представляет собой одностраничный web-сайт, посвященный вопросам повышения эффективности процесса обучения.
+The project is a single-page website dedicated to improving the effectiveness of the learning process.
 
-Проект **How to learn** доступено по [ссылке](https://projects.devilson.me/how-to-learn).
+The **How to learn** project can be accessed via [this link](https://projects.devilson.me/how-to-learn).
 
-## Функциональность проекта
-Проект предоставляет пользователью доступ к разным типам информации, посвященной повышению эффективности обучения: текстовые статьи, инфографика, видео материалы, ссылки на полезные ресурсы. 
+## Project Functionality
+The project provides users with access to various types of information aimed at enhancing learning effectiveness, including textual articles, infographics, video materials, and links to useful resources.
 
 <img width="1920" alt="HowToLearn" src="https://github.com/VilsonKh/VilsonKh/blob/main/preview__how-to-learn.png">
 
-## Технологический стек
-При создании проекта использовался следующий стек технологий: HTML, CSS.
+## Technology Stack
+The project was built using the following technology stack: HTML, CSS.
 
-При стилизации использовалась БЭМ-методология, анимация, работа с видео.
+The project utilized the BEM methodology for styling, as well as animations and video manipulation.
 
-## Работа с проектом
+## Installation
 
-Для клонирования проекта к себе на компьютер, пожалуйста, выполните следующую команду:
+To clone the project to your computer, please execute the following command:
 
 ```
 git clone https://github.com/VilsonKh/how-to-learn
