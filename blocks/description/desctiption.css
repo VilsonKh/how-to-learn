@@ -1,0 +1,38 @@
+.description { 
+  margin-bottom: 100px;
+}
+.two-columns {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.two-columns__brief {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 18px;
+  width: 175px;
+  font-weight: 400;
+  color: var(--color-blue);
+}
+
+.two-columns__main-text {
+  width: 80%;
+}
+
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+
+.two-columns__span-accent {
+  font-weight: 600;
+}
+
+.two-columns__paragraph:last-child {
+  margin-bottom: 0;
+}

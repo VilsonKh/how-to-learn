@@ -1,0 +1,58 @@
+.header {
+  height: 756px;
+  margin-bottom: 100px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden; 
+  background-color: var(--color-light-gray);
+  padding-left: 64px;
+}
+
+.logo {
+  width: 228px;
+  height: 32px;
+}
+
+.logo_place-header {
+  position: absolute;
+  top: 30px;
+}
+
+.header__title {
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+}
+
+.header__subtitle {
+  line-height: 25px;
+  font-size: 18px;
+  width: 388px;
+  position: absolute;
+  bottom: 30px;
+  font-weight: 400;
+}
+
+.header__link {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+
+.header__main-illustration {
+  width: 765px;
+  position: absolute;
+  pointer-events: none;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.header__square-pic {
+  height: 568px;
+  width: 568px;
+  background-color: var(--color-blue);
+  top: 64px;
+  right: 0;
+  position: absolute;
+}

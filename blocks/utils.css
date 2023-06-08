@@ -1,0 +1,9 @@
+
+a {
+  transition: all .3s linear;
+  color: inherit;
+}
+
+a:hover {
+  color: #22579c;
+}

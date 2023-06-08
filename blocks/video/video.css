@@ -1,0 +1,17 @@
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video__iframes {
+  margin: 0 0 -60px;
+}
+
+.video__iframes iframe {
+  border: none;
+}
+
+iframe:first-child{
+  margin-right: 20px;
+}
