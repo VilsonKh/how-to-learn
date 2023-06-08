@@ -1,9 +1,17 @@
 
+body {
+  margin: 0;
+}
+
 a {
-  transition: all .3s linear;
+  transition: all .2s linear;
   color: inherit;
 }
 
 a:hover {
-  color: #22579c;
+  opacity: .5;
+}
+
+img {
+  pointer-events: none;
 }

@@ -42,6 +42,7 @@
 
 .khan__book-container {
   display: flex;
+  align-items: start;
 }
 
 .khan__book-pic {
