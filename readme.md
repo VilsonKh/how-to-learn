@@ -2,7 +2,7 @@
 
 The project is a single-page website dedicated to improving the effectiveness of the learning process.
 
-The **How to learn** project can be accessed via [this link](https://vilsonkh.github.io/how-to-learn/).
+The **How to learn** project can be accessed via [this link](https://projects.devilson.me/how-to-learn).
 
 ## Project Functionality
 
